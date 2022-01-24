@@ -9,7 +9,7 @@ import {HiUser, HiUserAdd} from  'react-icons/hi';
 function Header() {
     return (
             <div className='w-full bg-[#4C3398] h-[45px] flex  items-center '>
-                <div className='container mx-auto px-[16px]'>
+                <div className='container mx-auto px-[24px]'>
                     <div className='flex  items-center  justify-between'>
                         <div className='flex justify-start '>
                             <div className='flex  mt-[5px]'>
