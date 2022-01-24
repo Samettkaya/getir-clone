@@ -2,7 +2,7 @@
 
 ## Live
 
-project live link [https://disneyclon.netlify.app/](https://disneyclon.netlify.app/).
+project live link [https://getirclone.netlify.app/](https://getirclone.netlify.app/).
 
 ## Getting started
 When you start, you need to clone your computer. Use git clone <url> command for this
