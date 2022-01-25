@@ -48,3 +48,14 @@
     border-color: #5d3ebc !important;
     transition: border 0.4s ease 0s;
  }
+
+ .slick-next::before{
+    color: #fafafa!important;
+   
+ }
+ .slick-prev::before{
+    color: #fafafa!important;
+ }
+
+
+ 
