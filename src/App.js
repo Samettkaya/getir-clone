@@ -5,6 +5,7 @@ import { Categories } from './components/Categories';
 import { Favorites } from './components/Favorites';
 import {Header} from './components/Header';
 import { HeroSection } from './components/HeroSection';
+import { MobileApp } from './components/MobileApp';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Categories></Categories>
       <Campaigns></Campaigns>
       <Favorites></Favorites>
+      <MobileApp></MobileApp>
     </div>
   );
 }
