@@ -1,5 +1,6 @@
 
 import './App.css';
+import { Banner } from './components/Banner';
 import { Campaigns } from './components/Campaigns';
 import { Categories } from './components/Categories';
 import { Favorites } from './components/Favorites';
@@ -16,6 +17,7 @@ function App() {
       <Campaigns></Campaigns>
       <Favorites></Favorites>
       <MobileApp></MobileApp>
+      <Banner></Banner>
     </div>
   );
 }
