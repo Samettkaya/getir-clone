@@ -2,7 +2,8 @@
 import './App.css';
 import { Campaigns } from './components/Campaigns';
 import { Categories } from './components/Categories';
-import Header from './components/Header';
+import { Favorites } from './components/Favorites';
+import {Header} from './components/Header';
 import { HeroSection } from './components/HeroSection';
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <HeroSection></HeroSection>
       <Categories></Categories>
       <Campaigns></Campaigns>
+      <Favorites></Favorites>
     </div>
   );
 }
