@@ -8,9 +8,15 @@ export const Footer = () => {
                 <div className='flex flex-row'>
                     <div className='basis-[276.5px] ' >
                         <h3 className='mb-4  text-lg text-[#5d3ebc] '>Getir'i indirin!</h3>
-                        <img className='mb-4' src='https://getir.com/_next/static/images/appstore-tr-141ed939fceebdcee96af608fa293b31.svg'/>
-                        <img className='mb-4' src='https://getir.com/_next/static/images/googleplay-tr-6b0c941b7d1a65d781fb4b644498be75.svg'/>
-                        <img className='' src='https://getir.com/_next/static/images/huawei-appgallery-tr-4b890fa3167bc62f9069edaf45aa7f30.svg'/>
+                        <a className='cursor-pointer'>
+                            <img className='mb-4' src='https://getir.com/_next/static/images/appstore-tr-141ed939fceebdcee96af608fa293b31.svg'/>
+                        </a>
+                        <a className='cursor-pointer'>
+                            <img className='mb-4' src='https://getir.com/_next/static/images/googleplay-tr-6b0c941b7d1a65d781fb4b644498be75.svg'/>
+                        </a>
+                        <a className='cursor-pointer'>
+                            <img className='' src='https://getir.com/_next/static/images/huawei-appgallery-tr-4b890fa3167bc62f9069edaf45aa7f30.svg'/>
+                        </a>
                     </div>
                     <div className='basis-[276.5px]  flex  flex-col' >
                         <h3 className='mb-4  text-lg text-[#5d3ebc] '>Getir'i keşfedin</h3>
@@ -37,7 +43,7 @@ export const Footer = () => {
                         <a className='text-[#191919] text-sm  pb-4 cursor-pointer'>GetirÇarşı İşletmesi Olun</a>
                     </div>
                     <div className='flex justify-end basis-[104px] '>
-                        <a className='  w-[72px ] h-[114px] p-4  rounded-lg footer-shadow'>
+                        <a className='  w-[72px ] h-[114px] p-4  rounded-lg footer-shadow cursor-pointer'>
                         <img className='w-[72px ] h-[84px]' src='https://getir.com/_next/static/images/etbis-33c159729adc8b4e2b946310f038d2f4.png'/>
                         </a>
                     </div>
