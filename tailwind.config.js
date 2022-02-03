@@ -14,8 +14,15 @@ module.exports = {
       }),
       fontFamily: theme =>( {
         
+      }),
+      screens: theme =>({
+        's': {'max':'320px'},
+        'm': {'max':'375px'},
+        'l': {'max':'425px'}
       })
+      
     },
   },
+ 
   plugins: [],
 }

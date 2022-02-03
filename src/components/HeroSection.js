@@ -6,10 +6,15 @@ import getirmainpage3 from "../img/getirmainpage3.jpg"
 import getirmainpage4 from "../img/getirmainpage4.jpg"
 import bimutluluk from "../img/bimutluluk.svg"
 import ReactFlagsSelect from 'react-flags-select';
+import {useWindowWidth} from '@react-hook/window-size'
+
+
+
+
 export const HeroSection = () => {
 
     const [selected, setSelected] = useState('TR');
-
+    const windowWidth = useWindowWidth()
     const phones={
         US:'+1',
         DE:'+5',
@@ -29,47 +34,49 @@ export const HeroSection = () => {
     }
 
     return (
-        <div className='relative h-[494px] before:bg-gradient-to-r before:from-primary-brand-color before:to-transparent before:absolute before:inset-0 before:w-full before:h:full before:z-20'>
-            <Slider {...settings}>
+        <div className='relative flex justify-center sm:h-[200px]  pt-6 md:h-[494px] before:bg-gradient-to-r md:before:from-primary-brand-color before:to-transparent before:absolute before:inset-0 before:w-full before:h:full before:z-10'>
+           {windowWidth>=768 &&  <Slider {...settings} className="">
                 <div >
-                    <img className='w-full h[500px] object-cover' src={getirmainpage1}/>
+                    <img className='w-full h-auto h[500px] object-cover' src={getirmainpage1}/>
                 </div>
                 <div >
-                    <img className='w-full h[500px] object-cover' src={getirmainpage2}/>
+                    <img className='w-full h-auto h[500px] object-cover' src={getirmainpage2}/>
                 </div>
                 <div >
-                    <img className='w-full h[500px] object-cover' src={getirmainpage3}/>
+                    <img className='w-full h-auto h[500px] object-cover' src={getirmainpage3}/>
                 </div>
                 <div >
-                    <img className='w-full h[500px] object-cover' src={getirmainpage4}/>
+                    <img className='w-full h-auto h[500px] object-cover' src={getirmainpage4}/>
                 </div>
-            </Slider>
-            <div className='container px-7 flex justify-between items-center absolute  top-0 left-1/2 -translate-x-1/2 h-[500px] z-20'>
-                <div>
+            </Slider>}
+            <div className='w-full md:container md:px-7 flex justify-between items-center relative md:absolute  top-0 left:0  md:left-1/2 translate-x-0 md:-translate-x-1/2 md:h-[500px] z-20'>
+                <div className='hidden md:block'>
                     <img  src={bimutluluk} />
-                    <h1 className='text-white font-semibold text-3xl w-[350px] mt-10'>Dakikalar içinde kapınızda</h1>
+                    <h1 className='text-white font-semibold text-3xl w-[300px] mt-10'>Dakikalar içinde kapınızda</h1>
                 </div>
-                <div className='w-[400px]   bg-[#fafafa] rounded-lg p-6 '>
-                    <h5 className='text-[#5d3ebc] mb-[15px] text-center  font-semibold text-base'>
-                        Giriş yap  veya kayıt ol
-                    </h5>
-                    <div className='flex justify-between mb-2'>
-                        <div>
-                            <ReactFlagsSelect 
-                        countries={Object.keys(phones)}
-                        customLabels={phones}
-   
-                        onSelect={code => setSelected(code)}
-                        selected={selected}
-                        className="flag-select"
-                        />
+                <div className=' w-full s:h-[157px] s:border-t-[1] s:border-solid s:border-[#f3f0fe] md:w-[400px]     '>
+                    <div className=' w-full px-3 md:py-6 s:h-[157px] h-52 sm:bg-[#FAFAFA] rounded-lg '>
+                        <h5 className='text-[#5d3ebc] mb-[15px] text-center  font-semibold text-base'>
+                            Giriş yap  veya kayıt ol
+                        </h5>
+                        <div className='flex  justify-between mb-2'>
+                            <div className='sm:mr-[10px]'>
+                                <ReactFlagsSelect 
+                                    countries={Object.keys(phones)}
+                                    customLabels={phones}
+            
+                                    onSelect={code => setSelected(code)}
+                                    selected={selected}
+                                    className="flag-select"
+                                />
+                            </div>
+                            <div className='relative group cursor-pointer w-full block s:ml-[10px]'>
+                                <input required className='  cursor-pointer text-sm font-sans group-hover:border-[#5d3ebc] px-[14px] pt-[10px] text-[#191919] border-2 rounded-[4px] input peer h-[56px] w-full outline-none   ' type="tel"/>
+                                <span className=' text-[15px] text-[#838287] font-sans tracking-[0.15px]  absolute top-0 flex items-center left-[14px] h-full transition-all peer-focus:h-6 peer-focus:text-[#5d3ebc] peer-focus:text-xs peer-valid:h-6 peer-valid:text-[#5d3ebc] peer-valid:text-xs'>Telefon Numarası</span>
+                            </div>
                         </div>
-                        <div className='relative group cursor-pointer  block'>
-                            <input required className='  cursor-pointer text-sm font-sans group-hover:border-[#5d3ebc] px-[14px] pt-[10px] text-[#191919] border-2 rounded-[4px] input peer h-[56px] w-[229px]  outline-none   ' type="tel"/>
-                            <span className=' text-[15px] text-[#838287] font-sans tracking-[0.15px]  absolute top-0 flex items-center left-[14px] h-full transition-all peer-focus:h-6 peer-focus:text-[#5d3ebc] peer-focus:text-xs peer-valid:h-6 peer-valid:text-[#5d3ebc] peer-valid:text-xs'>Telefon Numarası</span>
-                        </div>
+                        <button className='shadow-lg shadow-[#69748826]  flex justify-center  w-full py-[14px] px-4 mt-3 text-sm font-semibold rounded-lg text-[#5d3ebc] bg-[#ffd300] hover:text-[#ffd300] hover:bg-[#5d3ebc] transition-colors   ease-in'>Telefon numarsı ile devam et</button>
                     </div>
-                    <button className='flex justify-center h-full w-full py-[14px] px-4 mt-3 text-sm font-semibold rounded-lg text-[#5d3ebc] bg-[#ffd300] hover:text-[#ffd300] hover:bg-[#5d3ebc] transition-colors   ease-in'>Telefon numarsı ile devam et</button>
                 </div>
             </div>
         </div>

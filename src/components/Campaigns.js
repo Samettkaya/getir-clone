@@ -1,6 +1,6 @@
 import React  from 'react';
 import Slider from 'react-slick';
-
+import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io'
 
 const campaigns =[
     {
@@ -21,6 +21,21 @@ const campaigns =[
     }
 ]
 
+function NextButton ({ onClick, className }) {
+	return (
+		<button className={`${className} `} onClick={onClick}>
+			<IoIosArrowForward size={22} />
+		</button>
+	)
+}
+function PrevButton ({ onClick, className }) {
+	return (
+		<button className={`${className} `} onClick={onClick}>
+			<IoIosArrowBack size={22} />
+		</button>
+	)
+}
+
 
 export const Campaigns = () => {
    
@@ -33,21 +48,54 @@ export const Campaigns = () => {
         autoplay: true,
         autoplaySpeed: 2000,
         pauseOnHover: false,
+        arrows:true,
+        nextArrow: <NextButton/>,
+		prevArrow: <PrevButton />,
+        responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                infinite: true,
+                dots: false,
+                arrows:true
+              }
+            },
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                dots: false,
+                arrows:false
+              }
+            },
+            {
+              breakpoint: 767,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                dots: false,
+                arrows:false
+              }
+            }
+          ]
       
     }
 
     return (
         <div>
-           <div className="sm:container overflow-hidden md:overflow-visible mx-auto h-[264px] px-[35px] pt-[35px]"  >
-				<h3 className="font-semibold hidden sm:block text-sm mb-3">Kampanyalar</h3>
-				<Slider className="-mx-2 relative" {...settings}>
-					{campaigns.map(campaign => (
-						<div key={campaign.id} className="px-2 outline-none">
-							<img src={campaign.image} className="w-[400px] sm:rounded-lg " />
-						</div>
-					))}
-				</Slider>
-			</div>
+            <div className="md:container overflow-hidden md:overflow-visible mx-auto s:h-[160px]  m:h-[187.5px] l:h-[212.5px] md:h-[260px] md:px-[32px] md:pt-[32px]"  >
+              <h3 className="sm:hidden md:block font-semibold hidden  text-sm mb-2">Kampanyalar</h3>
+              <Slider className="md:-mx-2 relative" {...settings}>
+                {campaigns.map(campaign => (
+                  <div key={campaign.id} className="md:px-2 outline-none">
+                    <img src={campaign.image} className="w-full h-[200px] s:h-[160px] m:h-[187.5px] l:h-[212.5px]   md:h-[200px] md:rounded-lg " />
+                  </div>
+                ))}
+              </Slider>
+            </div>
         </div>
     );
 };

@@ -18,12 +18,12 @@ const cards = [
 ]
 export const Banner = () => {
   return (
-    <div className='container mx-auto px-[35px] '>
-        <div className='grid grid-cols-3 mt-16  gap-x-4 text-center '>
+    <div className='md:container mx-auto md:px-[35px] px-4 '>
+        <div className='grid grid-cols-1 md:grid-cols-3  mt-4 md:mt-16  gap-x-4 text-center '>
         {cards.map((card) => 
-            <div className='bg-white flex flex-col gap-y-2  items-center rounded-lg px-4 pt-[60px] pb-[40px]'>
+            <div className='bg-white flex flex-col gap-y-2 mb-4  md:mb-0 items-center md:rounded-lg px-4  py-8 md:pt-[60px] md:pb-[40px]'>
                 <img src={card.image}/>
-                <h3 className='text-lg text-[#5d3ebc] font-semibold tracking-[-0.028px] mt-[14px]'>{card.title}</h3>
+                <h3 className='text-base md:text-lg text-[#5d3ebc] font-semibold tracking-[-0.028px] mt-[14px]'>{card.title}</h3>
                 <p className='text-sm text-[#697488] '>{card.description}</p>
             </div>
             )}

@@ -11,10 +11,10 @@ export const Categories = () => {
 	}, [])
 
   return(
-    <div className='  h-[308px] bg-white py-6'>
-      <div className='container mx-auto px-[35px] '>
-          <h6 className='mb-2 text-sm font-semibold'>Kategoriler</h6>
-          <div className=' grid grid-cols-10 gap-4'>
+    <div className='  md:h-[550px] pt-3 pb-4 bg-[#F5F5F5] md:bg-white md:py-6'>
+      <div className=' md:container :mx-auto md:px-[32px] '>
+          <h6 className='md:px-0 px-4  mb-2  text-sm font-semibold'>Kategoriler</h6>
+          <div className=' grid grid-cols-4  md:grid-cols-5 lg:grid-cols-10 xl:grid-cols-10 2xl:grid-cols-12 md:gap-4'>
             {categories && categories.map(category => <CategoryItem key={category.id} category={category} />)}
           </div>
       </div>
