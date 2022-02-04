@@ -12,9 +12,9 @@ function Favorites({product}) {
                     <img src={product.image} className="w-24 h-24 s:w-20 s:h-20 md:w-full border md:border-0 sm:border-[#f3f0fe] rounded-lg"/>
                 </div>
             </picture>
-            <div className="flex flex-col items-center text-center gap-y-1">
-                <div className="text-sm font-semibold text-[#5d3ebc]">{new Intl.NumberFormat('tr-TR', { style: 'currency', currency: 'TRY' }).format(product.price)}</div>
-                <div className="text-sm font-semibold">{product.title}</div>
+            <div className="flex flex-col items-center text-center ">
+                <div className="text-sm leading-[18px] mb-2 font-semibold text-[#5d3ebc]">{new Intl.NumberFormat('tr-TR', { style: 'currency', currency: 'TRY' }).format(product.price)}</div>
+                <div className="text-sm leading-[18px] mb-[6px] tracking-[0.16px] font-semibold">{product.title}</div>
                 <div className="text-sm font-normal text-[#697488]">{product.alt}</div>
             </div>
         </div>

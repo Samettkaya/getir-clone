@@ -91,7 +91,7 @@ export const Campaigns = () => {
               <Slider className="md:-mx-2 relative" {...settings}>
                 {campaigns.map(campaign => (
                   <div key={campaign.id} className="md:px-2 outline-none">
-                    <img src={campaign.image} className="w-full h-[200px] s:h-[160px] m:h-[187.5px] l:h-[212.5px]   md:h-[200px] md:rounded-lg " />
+                    <img src={campaign.image} className="w-full  l:h-[212.5px] m:h-[187.5px] s:h-[160px]    md:h-[200px] md:rounded-lg " />
                   </div>
                 ))}
               </Slider>

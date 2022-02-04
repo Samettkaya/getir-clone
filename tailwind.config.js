@@ -16,9 +16,12 @@ module.exports = {
         
       }),
       screens: theme =>({
-        's': {'max':'320px'},
-        'm': {'max':'375px'},
-        'l': {'max':'425px'}
+        's': {'min':'320px'},
+        'm': {'min':'375px'},
+        'l': {'min':'425px'},
+        'tablet': {'min':'768px'},
+        'laptop': {'min':'1024px'},
+        'laptopl': {'min':'1440px'}
       })
       
     },
