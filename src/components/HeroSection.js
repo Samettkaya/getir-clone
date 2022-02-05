@@ -34,7 +34,7 @@ export const HeroSection = () => {
     }
 
     return (
-        <div className='relative flex justify-center sm:h-[200px]  pt-6 md:h-[494px] before:bg-gradient-to-r md:before:from-primary-brand-color before:to-transparent before:absolute before:inset-0 before:w-full before:h:full before:z-10'>
+        <div className='relative flex justify-center sm:h-[200px]  pt-6 md:pt-0 md:h-[494px] before:bg-gradient-to-r md:before:from-primary-brand-color before:to-transparent before:absolute before:inset-0 before:w-full before:h:full before:z-10'>
            {windowWidth>=768 &&  <Slider {...settings} className="">
                 <div >
                     <img className='w-full h-auto h[500px] object-cover' src={getirmainpage1}/>
@@ -49,18 +49,18 @@ export const HeroSection = () => {
                     <img className='w-full h-auto h[500px] object-cover' src={getirmainpage4}/>
                 </div>
             </Slider>}
-            <div className='w-full md:container md:px-7 flex justify-between items-center relative md:absolute  top-0 left:0  md:left-1/2 translate-x-0 md:-translate-x-1/2 md:h-[500px] z-20'>
+            <div className='w-full md:container md:px-8 flex justify-between items-center relative md:absolute  top-0 left:0  md:left-1/2 translate-x-0 md:-translate-x-1/2 md:h-[500px] z-20'>
                 <div className='hidden md:block'>
                     <img  src={bimutluluk} />
                     <h1 className='text-white font-semibold text-3xl w-[300px] mt-10'>Dakikalar içinde kapınızda</h1>
                 </div>
                 <div className=' w-full s:h-[157px] s:border-t-[1] s:border-solid s:border-[#f3f0fe] md:w-[400px]     '>
-                    <div className=' w-full s:px-4 m:px-4 l:px-4 md:py-6 s:h-[157px] h-52 sm:bg-[#FAFAFA] rounded-lg '>
+                    <div className=' w-full s:px-4 m:px-4 l:px-4 md:py-6 h-[157px] md:h-52 sm:bg-[#FAFAFA] rounded-lg '>
                         <h5 className='text-[#5d3ebc] mb-[15px] text-center  font-semibold text-base'>
                             Giriş yap  veya kayıt ol
                         </h5>
                         <div className='flex  justify-between mb-2'>
-                            <div className='sm:mr-[10px]'>
+                            <div className=''>
                                 <ReactFlagsSelect 
                                     countries={Object.keys(phones)}
                                     customLabels={phones}

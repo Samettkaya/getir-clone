@@ -50,8 +50,18 @@ export const Campaigns = () => {
         pauseOnHover: false,
         arrows:true,
         nextArrow: <NextButton/>,
-		prevArrow: <PrevButton />,
+		    prevArrow: <PrevButton />,
         responsive: [
+          {
+            breakpoint: 1440,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 1,
+              infinite: true,
+              dots: false,
+              arrows:true
+            }
+          },
             {
               breakpoint: 1024,
               settings: {
@@ -59,7 +69,7 @@ export const Campaigns = () => {
                 slidesToScroll: 1,
                 infinite: true,
                 dots: false,
-                arrows:true
+                arrows:false
               }
             },
             {
@@ -86,12 +96,12 @@ export const Campaigns = () => {
 
     return (
         <div>
-            <div className="md:container overflow-hidden md:overflow-visible mx-auto s:h-[160px]  m:h-[187.5px] l:h-[212.5px] md:h-[260px] md:px-[32px] md:pt-[32px]"  >
+            <div className="md:container overflow-hidden md:overflow-visible mx-auto s:h-[160px]  m:h-[187.5px] l:h-[212.5px] tablet:h-[260px] md:px-[32px] md:pt-[32px]"  >
               <h3 className="sm:hidden md:block font-semibold hidden  text-sm mb-2">Kampanyalar</h3>
               <Slider className="md:-mx-2 relative" {...settings}>
                 {campaigns.map(campaign => (
                   <div key={campaign.id} className="md:px-2 outline-none">
-                    <img src={campaign.image} className="w-full  l:h-[212.5px] m:h-[187.5px] s:h-[160px]    md:h-[200px] md:rounded-lg " />
+                    <img src={campaign.image} className="w-full  l:h-[212.5px] m:h-[187.5px] s:h-[160px]    tablet:h-[200px] md:rounded-lg " />
                   </div>
                 ))}
               </Slider>

@@ -75,3 +75,10 @@
 .flag-select button{
     padding: 0px 14px !important;
 }
+
+.shadow-banner{
+    box-shadow: rgb(93 62 188 / 4%) 0px 6px 24px
+}
+.category-shadow{
+    box-shadow: rgb(88 63 181 / 8%) 0px 2px 16px;
+}

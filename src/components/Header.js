@@ -14,37 +14,37 @@ export const Header = () => {
     return (
         <div>
              <div className='w-full bg-[#4C3398] h-10 md:h-[45px] flex  items-center '>
-            <div className='md:container md:mx-auto px-[6px] md:px-[16px] lg:px-[24px]'>
+            <div className='md:container md:mx-auto px-[6px] md:px-[16px] laptop:px-[32px]'>
                 <div className='flex  items-center  justify-between'>
                     <div className='flex justify-start '>
                         <div className='flex  mt-[5px]'>
-                            <div className='mr-[1px] flex items-center cursor-pointer py-3 px-3 md:px-5 md:py-3 rounded-t-[6px] bg-[#5D3EBC]'>
+                            <div className='mr-[1px] flex items-center cursor-pointer py-3 px-3 md:px-3 md:py-3 laptop:px-4  rounded-t-[6px] bg-[#5D3EBC]'>
                                     <a className=' '>
                                         <img className='h-[14px] md:h-[16px] ' src={getir}/>
                                     </a>
                             </div>
-                            <div className='mr-[1px] cursor-pointer  py-3 px-3 md:px-5 md:py-3 rounded-t-[6px] hover:bg-[#5D3EBC]'>
+                            <div className='mr-[1px] cursor-pointer  py-3 px-3 md:px-3 md:py-3 laptop:px-5  rounded-t-[6px] hover:bg-[#5D3EBC]'>
                                 <a className=' '>
                                     <figure className=' brightness-[5%] invert-[90%] '>
                                     <img className=' h-[14px] md:h-[16px]' src={getirfood}/>
                                     </figure>
                                 </a>
                             </div>
-                            <div className='mr-[1px]  cursor-pointer py-3 px-3 md:px-5 md:py-3 rounded-t-[6px] hover:bg-[#5D3EBC]'>
+                            <div className='mr-[1px]  cursor-pointer py-3 px-3 md:px-3 md:py-3 laptop:px-5  rounded-t-[6px] hover:bg-[#5D3EBC]'>
                                 <a className=' '>
                                     <figure className=' brightness-[5%] invert-[90%] '>
                                         <img className=' h-[14px] md:h-[16px]' src={getirmore}/>
                                     </figure>
                                 </a>
                             </div>
-                            <div className='mr-[1px] cursor-pointer  py-3 px-3 md:px-5 md:py-3 rounded-t-[6px] hover:bg-[#5D3EBC]'>
+                            <div className='mr-[1px] cursor-pointer  py-3 px-3 md:px-3 md:py-3 laptop:px-5  rounded-t-[6px] hover:bg-[#5D3EBC]'>
                                 <a className=' '>
                                     <figure className=' brightness-[5%] invert-[90%] '>
                                         <img className=' h-[14px] md:h-[16px]' src={getirwater}/>
                                     </figure>
                                 </a>
                             </div>
-                            <div className='  cursor-pointer  py-3 px-3 md:px-5 md:py-3 rounded-t-[6px] hover:bg-[#5D3EBC]'>
+                            <div className='  cursor-pointer  py-3 px-3 md:px-3 md:py-3 laptop:px-5  rounded-t-[6px] hover:bg-[#5D3EBC]'>
                                 <a className=' '>
                                     <figure className=' brightness-[5%] invert-[90%] '>
                                         <img className='  h-[14px] md:h-[16px]' src={getirlocals}/>
@@ -55,13 +55,13 @@ export const Header = () => {
                     </div>
                     <div className='hidden md:flex  lg:pr-5 text-sm text-[#dbdbff]'>
                         
-                        <a className=' flex justify-center items-center  cursor-pointer md:mr-3 lg:py-[7px] lg:pl-4 lg:pr-3 font-normal'>
-                            <BiGlobe className='mr-3 text-xl'/> <span className='lg:block md:hidden'>Türkçe (TR)</span>
+                        <a className=' flex justify-center items-center  cursor-pointer tablet:mr-1  lg:py-[7px] lg:pl-4 lg:pr-3 font-normal'>
+                            <BiGlobe className='mr-3 tablet:mr-2 text-xl'/> <span className='lg:block md:hidden'>Türkçe (TR)</span>
                         </a>
-                        <a className=' flex justify-center items-center  cursor-pointer md:mr-3 lg:py-[7px] lg:pl-4 lg:pr-3 font-semibold'>
+                        <a className=' flex justify-center items-center  cursor-pointer laptop:mr-3 lg:py-[7px] lg:pl-4 lg:pr-3 font-semibold'>
                             <HiUser className='mr-3 text-xl font-semibold'/> <span className='lg:block md:hidden'>Giriş yap</span>
                         </a>
-                        <a className=' flex justify-center items-center cursor-pointer md:mr-3 lg:py-[7px] lg:pl-4 lg:pr-3 font-semibold'>
+                        <a className=' flex justify-center items-center cursor-pointer :mr-3 lg:py-[7px] lg:pl-4 lg:pr-3 font-semibold'>
                             <HiUserAdd className='mr-1 text-xl font-semibold'/> <span className='lg:block md:hidden'> Kayıt Ol</span>
                         </a>
                     </div>
