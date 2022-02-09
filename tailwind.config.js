@@ -21,7 +21,9 @@ module.exports = {
         'l': {'min':'425px'},
         'tablet': {'min':'768px'},
         'laptop': {'min':'1024px'},
-        'laptopl': {'min':'1440px'}
+        'laptopl': {'min':'1440px'},
+        'xll' : {'max':'1440px'}
+
       })
       
     },

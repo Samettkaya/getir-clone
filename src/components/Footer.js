@@ -4,10 +4,10 @@ import {BiGlobe} from  'react-icons/bi';
 export const Footer = () => {
     return( 
         <div className='bg-white  md:mt-16'>
-            <div className='laptopl:mx-[104px] xl:mx-[64px] '>
+            <div className='laptopl:mx-[104px]  laptop:mx-[64px]  '>
                 <div className='tablet:container  tablet:mx-auto   md:pt-[40px]'>
-                    <div className='md:flex  flex-row    md:px-[24px] lg:px-[24px] xl:px-0 pt-4 px-4 md:pt-0 '>
-                        <div className='tablet:basis-[162px] laptop:basis-[226px] laptopl:basis-[258px] tablet:mr-6  basis-[276.5px] ' >
+                    <div className='md:flex  flex-row  tablet:px-[24px] laptop:px-0 pt-4 px-4 md:pt-0 '>
+                        <div className='tablet:basis-[162px] laptop:basis-[226px] xll:basis-[258px] laptopl:basis-[258px] tablet:mr-6  basis-[276.5px] ' >
                             <h3 className='mb-4  text-lg text-[#5d3ebc] sm:font-normal '>Getir'i indirin!</h3>
                             <a className='cursor-pointer'>
                                 <img className='mb-4' src='https://getir.com/_next/static/images/appstore-tr-141ed939fceebdcee96af608fa293b31.svg'/>
@@ -19,7 +19,7 @@ export const Footer = () => {
                                 <img className='' src='https://getir.com/_next/static/images/huawei-appgallery-tr-4b890fa3167bc62f9069edaf45aa7f30.svg'/>
                             </a>
                         </div>
-                        <div className='tablet:basis-[162px] laptop:basis-[226px] laptopl:basis-[258px] tablet:mr-6 basis-[276.5px] mt-6 md:mt-0 flex  flex-col' >
+                        <div className='tablet:basis-[162px] laptop:basis-[226px] xll:basis-[258px] laptopl:basis-[258px] tablet:mr-6 basis-[276.5px] mt-6 md:mt-0 flex  flex-col' >
                             <div>
                                 <h3 className='mb-4  text-lg text-[#5d3ebc] sm:font-normal '>Getir'i keşfedin</h3>
                             </div>
@@ -32,7 +32,7 @@ export const Footer = () => {
                                 <a className='text-[#191919] text-sm  pb-4 cursor-pointer'>Sosyal Sorumluluk Projeleri</a>
                             
                         </div>
-                        <div className='tablet:basis-[162px] laptop:basis-[226px] laptopl:basis-[258px] tablet:mr-6  basis-[276.5px] flex  flex-col' >
+                        <div className='tablet:basis-[162px] laptop:basis-[226px] xll:basis-[258px] laptopl:basis-[258px] tablet:mr-6  basis-[276.5px] flex  flex-col' >
                             <h3 className='mb-4 font-normal text-lg text-[#5d3ebc] '>Yardıma mı ihtiyacınız var?</h3>
                             <a className='text-[#191919] text-sm  pb-4 cursor-pointer'>Sıkça Sorulan Sorular</a>
                             <a className='text-[#191919] text-sm  pb-4 cursor-pointer'>Kişisel Verilerin Korunması</a>
@@ -40,7 +40,7 @@ export const Footer = () => {
                             <a className='text-[#191919] text-sm  pb-4 cursor-pointer'>Kullanım Koşulları</a>
                             <a className='text-[#191919] text-sm  pb-4 cursor-pointer'>Çerez Politikası</a>
                         </div>
-                        <div className='tablet:basis-[162px] laptop:basis-[226px] laptopl:basis-[258px] tablet:mr-6  basis-[276.5px]  flex  flex-col' >
+                        <div className='tablet:basis-[162px] laptop:basis-[226px] xll:basis-[258px] laptopl:basis-[258px]  xll:mr-6 laptop:mr-0 basis-[276.5px]  flex  flex-col' >
                             <h3 className='mb-4 font-normal text-lg text-[#5d3ebc] '>İş Ortağımız Olun</h3>
                             <a className='text-[#191919] text-sm  pb-4 cursor-pointer'>Bayimiz Olun</a>
                             <a className='text-[#191919] text-sm  pb-4 cursor-pointer'>Deponuzu Kiralayın</a>
@@ -53,7 +53,7 @@ export const Footer = () => {
                             </a>
                         </div>
                     </div>
-                    <div className=' h-[165px] md:h-20 text-[13px] lg:p-6 p-4 md:py-6 md:flex grid justify-center md:justify-between items-center md:bg-white bg-[#F5F5F5] border-t border-solid border-[#f3f0fe]'>
+                    <div className=' h-[165px] md:h-20 text-[13px] tablet:p-6 laptop:p-0 p-4  md:flex grid justify-center md:justify-between items-center md:bg-white bg-[#F5F5F5] border-t border-solid border-[#f3f0fe]'>
                         <div className='md:flex justify-center items-center m:text-center l:text-center s:text-center'>
                             <span className='md:mr-8  font-normal text[#525252]'>© 2022 Getir</span>
                             <div className='md:mt-0 md:mb-0  mt-1 mb-2'>

@@ -19,7 +19,7 @@ export const MobileApp = () => {
                         </a>                       
                     </div>
                 </div>
-                <div className='hidden md:block tablet:mt-[151px] tablet:w-[370px] laptop:w-[605px] laptop:mt-[62px] laptopl:mt-[14px] tablet:overflow-hidden'>
+                <div className='hidden md:block tablet:mt-[151px] tablet:w-[370px] laptop:w-[503px] laptop:mt-[60px] laptopl:mt-[0px] tablet:overflow-hidden'>
                     <img className='self-end mt-4 md:w-full md:h-full object-contain leptop:ml-7' src='https://getir.com/_next/static/images/phoneLanding-88c033545710c4808054072689e187d7.png'/>
                 </div>
             </div>

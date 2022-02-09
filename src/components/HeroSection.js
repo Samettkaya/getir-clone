@@ -34,19 +34,19 @@ export const HeroSection = () => {
     }
 
     return (
-        <div className='relative flex justify-center sm:h-[200px]  pt-6 md:pt-0 md:h-[494px] before:bg-gradient-to-r md:before:from-primary-brand-color before:to-transparent before:absolute before:inset-0 before:w-full before:h:full before:z-10'>
-           {windowWidth>=768 &&  <Slider {...settings} className="">
+        <div className='relative justify-center sm:h-[200px]  pt-6 md:pt-0 md:h-[500px] before:bg-gradient-to-r md:before:from-primary-brand-color before:to-transparent before:absolute before:inset-0 before:w-full before:h:full before:z-10'>
+           {windowWidth>=768 &&  <Slider {...settings} className="before:z-20">
                 <div >
-                    <img className='w-full h-auto h[500px] object-cover' src={getirmainpage1}/>
+                    <img className='w-full  h-[500px] object-cover' src={getirmainpage1}/>
                 </div>
                 <div >
-                    <img className='w-full h-auto h[500px] object-cover' src={getirmainpage2}/>
+                    <img className='w-full  h-[500px] object-cover' src={getirmainpage2}/>
                 </div>
                 <div >
-                    <img className='w-full h-auto h[500px] object-cover' src={getirmainpage3}/>
+                    <img className='w-full h-[500px] object-cover' src={getirmainpage3}/>
                 </div>
                 <div >
-                    <img className='w-full h-auto h[500px] object-cover' src={getirmainpage4}/>
+                    <img className='w-full h-[500px] object-cover' src={getirmainpage4}/>
                 </div>
             </Slider>}
             <div className='w-full md:container md:px-8 flex justify-between items-center relative md:absolute  top-0 left:0  md:left-1/2 translate-x-0 md:-translate-x-1/2 md:h-[500px] z-20'>
